@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  border-top: 1px solid #d3d3d3;
+}
+
+.input {
+  border: none;
+  border-radius: 0;
+  padding: 0 5%;
+  width: 80%;
+  font-size: 1.2em;
+  font-family: "serif";
+  font-size: 15px;
+  height: 55px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.sendButton {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #2979ff;
+  padding: 16px;
+  display: inline-block;
+  border: none;
+  width: 50px;
+  transform: rotate(55deg);
+  border-radius: 25px;
+  height: 50px;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.send__attachment {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding: 14px 13px;
+  color: #9e9a9a;
+}
+
+.giphy-picker {
+  width: 100%;
+}
