@@ -1,0 +1,17 @@
+/.next/
+/node_modules/
+/build/
+/.idea/
+.vscode/settings.json
+package-lock.json
+package.json
+.now
+next.config.js
+**/public/workbox-*.js
+**/public/sw.js
+**/public/sw*.js*
+**/public/worker-*.js
+**/public/sw.js.map
+**/public/worker-*.js.map
+**/public/workbox-*.js.map
+.DS_Store
