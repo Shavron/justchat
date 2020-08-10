@@ -19,9 +19,16 @@ body {
   text-align: center;
   height: 100vh;
   align-items: center;
-  background-color: #1a1a1d;
+  /* background-color: #1a1a1d; */
 }
-
+.fixed-bg {
+  background-image: url("/black-background-for-site-by-rania.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .joinInnerContainer {
   width: 20%;
 }

@@ -82,7 +82,7 @@ const ChatBox = ({ location }) => {
   };
 
   return (
-    <div className="outerContainer">
+    <div className="outerContainer ">
       <div className="container">
         <NavBar room={room} users={users} />
         <Chats messages={messages} name={name} />

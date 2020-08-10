@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import "./css/Login.css";
 
 export default function Login() {
-  const [name, setName] = useState("Jhon");
-  const [room, setRoom] = useState("secret");
+  const [name, setName] = useState("");
+  const [room, setRoom] = useState("");
 
   const genrateRoom = (len, charSet) => {
     charSet =
@@ -21,10 +21,11 @@ export default function Login() {
 
   return (
     <>
-      <div className="joinOuterContainer">
+      <div className="joinOuterContainer fixed-bg">
         <div className="joinInnerContainer">
           <h1 className="heading">
-            <i class="fa fa-user-secret" aria-hidden="true"></i> &nbsp; JustChat
+            <i class="fa fa-user-secret" aria-hidden="true"></i> &nbsp;
+            JustChatMe
           </h1>
           <div>
             <input
@@ -44,13 +45,13 @@ export default function Login() {
               onChange={event => setRoom(event.target.value)}
             />
           </div>
-          <button
+          {/* <button
             className={"button mt-20 genrate"}
             type="button"
             onClick={() => genrateRoom(7)}
           >
             Create Room
-          </button>
+          </button> */}
           <Link
             onClick={e => (!name || !room ? e.preventDefault() : null)}
             to={`/chat?name=${name}&room=${room}`}
