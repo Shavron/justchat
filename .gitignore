@@ -4,7 +4,6 @@
 /.idea/
 .vscode/settings.json
 package-lock.json
-package.json
 .now
 next.config.js
 **/public/workbox-*.js
