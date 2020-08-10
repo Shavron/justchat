@@ -8,9 +8,9 @@ import "./css/Chats.css";
 
 const Chats = ({ messages, name }) => (
   <ScrollToBottom className="messages">
-    {messages &&
+    {messages.length > 0 &&
       messages.map((message, i) => (
-        <Message key={i} message={message} name={name} />
+        <Message key={i} chat={message} name={name} />
       ))}
   </ScrollToBottom>
 );

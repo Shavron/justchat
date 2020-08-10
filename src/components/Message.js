@@ -3,7 +3,7 @@ import ReactEmoji from "react-emoji";
 import "./css/Message.css";
 import moment from "moment";
 
-const Message = ({ message: { message, user }, name }) => {
+const Message = ({ chat: { message, user }, name }) => {
   const trimmedName = name.trim().toLowerCase();
   const isSentByCurrentUser = user === trimmedName ? true : false;
 
