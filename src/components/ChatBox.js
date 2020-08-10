@@ -18,7 +18,7 @@ const ChatBox = ({ location }) => {
   const [giphy, setGiphy] = useState(false);
   const ENDPOINT = document.location.origin.includes("localhost")
     ? "http://localhost:5004/"
-    : "https://project-chat-application.herokuapp.com/";
+    : "https://justchatserver.herokuapp.com/";
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
